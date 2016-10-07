@@ -43,7 +43,22 @@ int Point::getY()
 	return y;
 }
 
+int Point::getX() const
+{
+	return x;
+}
+
+int Point::getY() const
+{
+	return y;
+}
+
 void Point::printInfo()
+{
+	cout << "(" << getX() << "," << getY() << ")" << endl;
+}
+
+void Point::printInfo() const
 {
 	cout << "(" << getX() << "," << getY() << ")" << endl;
 }

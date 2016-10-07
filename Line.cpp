@@ -36,3 +36,9 @@ void Line::printInfo()
 	pointA.printInfo();
 	pointB.printInfo();
 }
+
+void Line::printInfo() const
+{
+	pointA.printInfo();
+	pointB.printInfo();
+}

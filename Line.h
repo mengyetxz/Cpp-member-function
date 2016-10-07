@@ -10,6 +10,7 @@ public:
 	~Line();
 	void setLine(int x1, int y1, int x2, int y2);
 	void printInfo();
+	void printInfo() const;
 private:
 	Point pointA;
 	Point pointB;
