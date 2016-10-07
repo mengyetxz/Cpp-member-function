@@ -7,15 +7,15 @@ Point::Point():x(0), y(0)
 	cout << "Point():x(0), y(0)" << endl;
 }
 
-Point::Point(int xx, int yy) :x(xx), y(yy)
+Point::Point(int x, int y) :x(x), y(y)
 {
 	cout << "Point(int xx, int yy) :x(xx), y(yy)" << endl;
 	//cout << "Point(int xx, int yy) :x(" << x << ")" << "," << "y(" << y << ")" << endl;
 }
 
-Point::Point(const Point &p0)
+Point::Point(const Point &p):x(p.x), y(p.y)
 {
-	cout << "Point(const Point &p0)" << endl;
+	cout << "Point(const Point &p)" << endl;
 }
 
 Point::~Point()
@@ -23,14 +23,14 @@ Point::~Point()
 	cout << "~Point()" << endl;
 }
 
-void Point::setX(int xx)
+void Point::setX(int x)
 {
-	x = xx;
+	this->x = x;
 }
 
-void Point::setY(int yy)
+void Point::setY(int y)
 {
-	y = yy;
+	this->y = y;
 }
 
 int Point::getX()

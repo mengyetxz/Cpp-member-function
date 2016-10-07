@@ -1,12 +1,14 @@
+#pragma once
+
 class Point
 {
 public:
 	Point();
-	Point(int xx, int yy);
-	Point(const Point &p0);
+	Point(int x, int y);
+	Point(const Point &);
 	~Point();
-	void setX(int xx);
-	void setY(int yy);
+	void setX(int);
+	void setY(int);
 	int getX();
 	int getY();
 	void printInfo();

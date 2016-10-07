@@ -13,7 +13,7 @@ Line::Line(int x1, int y1, int x2, int y2) :pointA(x1, y1), pointB(x2, y2)
 	//cout << "Line(int x1, int y1, int x2, int y2) :pointA(" << x1 << "," << y1 << "), pointB(" << x2 << "," << y2 << ")" << endl;
 }
 
-Line::Line(const Line &L)
+Line::Line(const Line &L):pointA(L.pointA), pointB(L.pointB)
 {
 	cout << "Line(const Line &L)" << endl;
 }
